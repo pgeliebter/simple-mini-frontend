@@ -23,7 +23,9 @@
             {{ message }}   
       <div>
         <button v-on:click="loadProducts">Load Products</button>
-        <p>Products: {{products}}</p>
+        <div v-for="product in products">
+          <p>{{product}}</p>
+        </div>
       </div>
 
         
